@@ -215,12 +215,12 @@
 }
 .fontstyle5 {
   color: white;
-  font-size: 3vw;
-  margin: 2vw;
+  font-size: 1.5vw;
+  margin: 1.5vw;
 }
 .fontstyle5:hover {
   color: rgb(243, 187, 44);
-  font-size: 3vw;
+  font-size: 1.5vw;
 }
 .logos {
   width: 16vw;
