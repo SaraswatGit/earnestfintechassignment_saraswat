@@ -1,38 +1,329 @@
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
+}
+.navbar {
+  display: flex;
+  flex-direction: row;
+  position: fixed;
+  top: 0%;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5vw;
+  width: 100vw;
+  height: 3vw;
+  background-color: rgb(94, 1, 156);
+  z-index: 3;
+}
+.navsearchbar {
+  border-bottom-left-radius: 25px;
+  border-top-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  border-top-right-radius: 25px;
+  position: absolute;
+  width: 15vw;
+  margin-left: 75vw;
+  border: none;
+  outline: none;
+  padding: 0.5vw;
+  height: 1;
+  font-size: 1.5vw;
+}
+.element {
+  color: white;
+  margin-right: 3vw;
+  font-weight: bolder;
+  font-size: 1.5vw;
+}
+.element:hover {
+  color: rgb(255, 238, 0);
+  cursor: pointer;
+}
+.slide1 {
+  background-image: url("Assets/slide1.jpg");
+  height: 100vh;
+  width: 100vw;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.slide2 {
+  background-image: url("Assets/slide2.jpg");
+  height: 100vh;
+  width: 100vw;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.slide3 {
+  background-image: url("Assets/slide3.jpg");
+  height: 100vh;
+  width: 100vw;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.whatscool {
+  width: 94vw;
+  padding: 3vw 1vw 3vw 1vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.coolheading {
+  width: 100%;
+  color: indigo;
+  font-weight: 600;
+  text-align: center;
+  font-size: 3.5vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.coolsections {
+  display: flex;
+  flex-direction: row;
+  padding: 2vw;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+.coolelement {
+  display: flex;
+  flex-direction: column;
+  height: 25vw;
+  width: 25vw;
+  box-shadow: 5px 5px lightgray;
+  margin: 1.5vw;
+  padding: 1.5vw;
+  justify-content: center;
+  align-items: center;
+}
+.bluebutton {
+  background-color: indigo;
   color: white;
+  font-weight: 400;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1.5vw;
+  border: none;
+  outline: none;
+  padding: 1.5vw;
+  width: 7vw;
+  font-size: 1vw;
 }
-
-.App-link {
-  color: #61dafb;
+.cooldesc {
+  font-weight: bolder;
+  font-size: 1.4vw;
 }
+.giftcardsection {
+  display: grid;
+  grid-template-columns: 18vw 18vw 18vw 18vw;
+  grid-column-gap: 2.5vw;
+  grid-template-rows: 18vw 18vw;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  grid-row-gap: 2.5vw;
+}
+.cardelement {
+  display: flex;
+  flex-direction: column;
+  box-shadow: 5px 5px 5px 5px lightgray;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+.imgdesc {
+  width: 80%;
+  height: 50%;
+}
+.keyfeaturessection {
+  display: grid;
+  grid-template-columns: 20vw 20vw 20vw;
+  grid-column-gap: 3vw;
+  grid-template-rows: 15vw 15vw;
+  grid-row-gap: 3vw;
+}
+.keyfeatureselement {
+  padding: 0.5vw;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  box-shadow: 5px 5px 5px 5px lightgray;
+  align-items: flex-start;
+}
+.imgdesc2 {
+  width: 40%;
+  height: 40%;
+}
+.fontstyle1 {
+  font-weight: 500;
+  font-size: 1.5vw;
+}
+.fontstyle2 {
+  font-weight: bolder;
+  font-size: 1.5vw;
+}
+.offerelements {
+  padding: 0.5vw;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.imgdesc3 {
+  width: 40%;
+  height: 40%;
+}
+.worksections {
+  padding: 5vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.worksectionitem {
+  background-color: gray;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 15vw;
+  width: 15vw;
+  padding: 1vw;
+}
+.fontstyle3 {
+  font-weight: bolder;
+  font-size: 3vw;
+}
+.fontstyle4 {
+  font-size: 1vw;
+}
+.lastsection {
+  background-color: rgb(94, 1, 156);
+  height: 50vw;
+  width: 92.9vw;
+  display: flex;
+  flex-direction: row;
+  padding: 3vw;
+}
+.lastsectioncolumns {
+  display: flex;
+  flex-direction: column;
+  padding: 5vw;
+}
+.fontstyle5 {
+  color: white;
+  font-size: 3vw;
+  margin: 2vw;
+}
+.fontstyle5:hover {
+  color: rgb(243, 187, 44);
+  font-size: 3vw;
+}
+.logos {
+  width: 16vw;
+  height: 8vw;
+}
+@media only screen and (max-width: 600px) {
+  .slide1 {
+    background-image: url("Assets/slide1phone.jpg");
+    height: 70vh;
   }
-  to {
-    transform: rotate(360deg);
+  .slide2 {
+    background-image: url("Assets/slide2phone.jpg");
+    height: 70vh;
+  }
+  .slide3 {
+    background-image: url("Assets/slide3phone.jpeg");
+    height: 70vh;
+  }
+  .coolsections {
+    flex-direction: column;
+  }
+  .coolelement {
+    height: 40vh;
+    width: 40vh;
+  }
+  .cooldesc {
+    font-size: 3vh;
+  }
+  .bluebutton {
+    display: flex;
+    width: 20vw;
+    padding: 3vw;
+    font-size: 1vh;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+  }
+  .coolheading {
+    font-size: 3vh;
+  }
+  .giftcardsection {
+    grid-template-columns: 30vw 30vw;
+    grid-column-gap: 5vw;
+    grid-template-rows: 30vw 30vw;
+
+    grid-row-gap: 5vw;
+  }
+  .keyfeaturessection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .keyfeatureselement {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1vh;
+    height: 23vh;
+    width: 23vh;
+  }
+  .fontstyle1 {
+    font-size: 2vh;
+  }
+  .fontstyle2 {
+    font-size: 1vh;
+  }
+  .offerelements {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .imgdesc3 {
+    height: 20%;
+    width: 20%;
+    margin-right: 11vh;
+    margin-left: 3vh;
+  }
+  .worksections {
+    display: flex;
+    flex-direction: column;
+  }
+  .worksectionitem {
+    display: flex;
+    flex-direction: row;
+    background-color: transparent;
+    border: 2px solid indigo;
+    padding: 1vh;
+    justify-content: center;
+    align-items: center;
+    height: 2vh;
+    width: 40vw;
+    margin-bottom: 3vh;
+  }
+  .fontstyle4 {
+    margin-left: 6vh;
+    font-weight: bolder;
+    font-size: 1vh;
+  }
+  .logos {
+    width: 10vh;
+    height: 3vh;
   }
 }
